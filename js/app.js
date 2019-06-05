@@ -18,3 +18,37 @@ html = `
         `;
 
 document.body.innerHTML = html; 
+
+const numbers = [43,56,33,100,44,36,5];
+
+let val; 
+
+// val = numbers.sort(function(x, y){
+//   return x - y;
+// });
+
+function under50(num){
+  return num < 50;
+};
+
+val = numbers.find(under50);
+
+console.log(numbers);
+console.log(val);
+
+const person = {
+  firstName: 'Steve'
+};
+
+val = person; 
+
+console.log(val);
+
+const today = new Date(); 
+
+console.log(today);
+
+val = today; 
+
+console.log(val);
+
